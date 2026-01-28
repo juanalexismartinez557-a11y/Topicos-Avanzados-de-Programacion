@@ -1,0 +1,22 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vcxproj.user
+
+
+# Archivos compilados
+*.dll
+*.exe
+*.pdb
+
+*.ilk
+*.obj
+*.pdb
+*.idb
+
+/x64/
+/Debug/
+/Release/
+

@@ -1,3 +1,9 @@
 C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.AssemblyReference.cache
 C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.GenerateResource.cache
 C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.MyForm1.resources
+C:\Users\almal\OneDrive\Documentos\GitHub\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.AssemblyReference.cache
+C:\Users\almal\OneDrive\Documentos\GitHub\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.MyForm1.resources
+C:\Users\almal\OneDrive\Documentos\GitHub\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.GenerateResource.cache
+C:\Users\almal\source\repos\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.AssemblyReference.cache
+C:\Users\almal\source\repos\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.MyForm1.resources
+C:\Users\almal\source\repos\Topicos-Avanzados-de-Programacion\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.GenerateResource.cache

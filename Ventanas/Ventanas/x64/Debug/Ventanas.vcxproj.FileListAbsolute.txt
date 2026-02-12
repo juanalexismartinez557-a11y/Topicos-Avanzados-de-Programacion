@@ -1,3 +1,3 @@
 C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.AssemblyReference.cache
-C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.MyForm.resources
 C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.vcxproj.GenerateResource.cache
+C:\Users\juana\Documents\GitHub\Programacion-Avanzada\Ventanas\Ventanas\x64\Debug\Ventanas.MyForm1.resources

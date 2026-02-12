@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentación del Proyecto - Procesamiento de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        code {
+            background: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Documentación del Proyecto</h1>
+<p><strong>Proyecto:</strong> Aplicación de Procesamiento de Imágenes con OpenCV</p>
+<p><strong>Lenguaje:</strong> C++/CLI</p>
+<p><strong>Interfaz gráfica:</strong> WinForms</p>
+<p><strong>Integrantes:</strong> Juan Alexis Moran Gómez, Victor Eduardo Reyes Gonzales, Luis Diego Aguilar Rodríguez</p>
+
+<section>
+<h2>1. Introducción</h2>
+<p>
+Este proyecto consiste en el desarrollo de una aplicación con interfaz gráfica que permite
+cargar imágenes desde el sistema o utilizar la cámara del equipo para aplicar distintos
+filtros de procesamiento digital de imágenes. La aplicación fue desarrollada utilizando
+C++/CLI con WinForms y la biblioteca OpenCV.
+</p>
+</section>
+
+<section>
+<h2>2. Tecnologías Utilizadas</h2>
+<ul>
+    <li>C++/CLI</li>
+    <li>Windows Forms (WinForms)</li>
+    <li>OpenCV</li>
+    <li>Visual Studio</li>
+</ul>
+</section>
+
+<section>
+<h2>3. Estructura del Proyecto</h2>
+<p>
+El proyecto se encuentra organizado en distintos archivos que permiten separar la lógica
+de la interfaz gráfica y el procesamiento de imágenes:
+</p>
+<ul>
+    <li><code>MyForm.h</code> – Contiene la interfaz gráfica y los eventos de los botones.</li>
+    <li><code>ImageProcessor.h / ImageProcessor.cpp</code> – Implementan los filtros de OpenCV.</li>
+    <li><code>main.cpp</code> – Punto de entrada del programa.</li>
+    <li><code>.vcxproj</code> – Archivo de configuración del proyecto.</li>
+</ul>
+</section>
+
+<section>
+<h2>4. Interfaz Gráfica</h2>
+<p>
+La interfaz gráfica fue desarrollada en WinForms y cuenta con los siguientes elementos:
+</p>
+<ul>
+    <li>Botón para cargar una imagen desde el equipo.</li>
+    <li>Botón para activar la cámara.</li>
+    <li>Lista desplegable (ComboBox) para seleccionar el filtro.</li>
+    <li>TrackBars (sliders) para modificar valores como el umbral.</li>
+</ul>
+<p>
+Los cambios realizados mediante los controles se reflejan en tiempo real sobre la imagen.
+</p>
+</section>
+
+<section>
+<h2>5. Filtros Implementados</h2>
+
+<h3>Escala de Grises</h3>
+<p>
+Convierte la imagen a un solo canal de intensidad, reduciendo la información de color
+y facilitando el análisis de la imagen.
+</p>
+
+<h3>Binarización</h3>
+<p>
+Transforma la imagen en blanco y negro utilizando un valor de umbral. Se implementan
+dos variantes: blanco/negro y negro/blanco.
+</p>
+
+<h3>Canny</h3>
+<p>
+Algoritmo de detección de bordes que utiliza gradientes para identificar contornos
+en la imagen.
+</p>
+
+<h3>Sobel</h3>
+<p>
+Operador que permite detectar bordes en dirección horizontal y vertical mediante
+derivadas.
+</p>
+
+<h3>Separación de Canales RGB</h3>
+<p>
+Permite visualizar de forma independiente los canales rojo, verde y azul de una imagen.
+</p>
+
+<h3>Rotación y Zoom</h3>
+<p>
+Transformaciones geométricas aplicadas a la imagen para cambiar su orientación o escala.
+</p>
+
+</section>
+
+<section>
+<h2>6. Uso de TrackBars</h2>
+<p>
+Los TrackBars permiten modificar dinámicamente los valores asociados a los filtros,
+como el umbral en la binarización o los parámetros en los detectores de bordes, reflejando
+los cambios de forma inmediata en la imagen mostrada.
+</p>
+</section>
+
+<section>
+<h2>7. Proceso de Desarrollo</h2>
+<ol>
+    <li>Configuración del entorno de desarrollo con OpenCV.</li>
+    <li>Creación de la interfaz gráfica en WinForms.</li>
+    <li>Implementación de botones y eventos.</li>
+    <li>Integración de filtros de OpenCV.</li>
+    <li>Pruebas y ajustes de parámetros mediante TrackBars.</li>
+</ol>
+</section>
+
+<section>
+<h2>8. Conclusión</h2>
+<p>
+Este proyecto permitió aplicar conocimientos de procesamiento digital de imágenes,
+programación en C++ y desarrollo de interfaces gráficas, fortaleciendo el trabajo en
+equipo y el uso de bibliotecas externas como OpenCV.
+</p>
+</section>
+
+</body>
+</html>

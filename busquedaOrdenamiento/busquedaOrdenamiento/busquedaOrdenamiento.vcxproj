@@ -123,12 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="numerosRandom.cpp" />
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="busquedaOrdenamiento.cpp" />
     <ClCompile Include="search.cpp" />
     <ClCompile Include="view.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="numerosRandom.h" />
     <ClInclude Include="search.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="view.h" />

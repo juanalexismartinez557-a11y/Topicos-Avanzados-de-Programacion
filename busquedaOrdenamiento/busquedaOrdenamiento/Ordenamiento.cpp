@@ -1,8 +1,7 @@
 #include "Ordenamiento.h"
 
 // Metodo Burbuja
-// Complejidad O(n²)
-void Ordenamiento::burbuja(int arr[], int n) {
+void Ordenamiento::burbuja(int arr[], int n, bool mostrar) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -11,12 +10,17 @@ void Ordenamiento::burbuja(int arr[], int n) {
                 arr[j + 1] = temp;
             }
         }
+
+        if (mostrar) {
+            for (int k = 0; k < n; k++)
+                cout << arr[k] << " ";
+            cout << endl;
+        }
     }
 }
 
 // Metodo Seleccion
-// Complejidad O(n²)
-void Ordenamiento::seleccion(int arr[], int n) {
+void Ordenamiento::seleccion(int arr[], int n, bool mostrar) {
     for (int i = 0; i < n - 1; i++) {
         int min = i;
         for (int j = i + 1; j < n; j++) {
@@ -24,15 +28,21 @@ void Ordenamiento::seleccion(int arr[], int n) {
                 min = j;
             }
         }
+
         int temp = arr[i];
         arr[i] = arr[min];
         arr[min] = temp;
+
+        if (mostrar) {
+            for (int k = 0; k < n; k++)
+                cout << arr[k] << " ";
+            cout << endl;
+        }
     }
 }
 
 // Metodo Insercion
-// Complejidad O(n²)
-void Ordenamiento::insercion(int arr[], int n) {
+void Ordenamiento::insercion(int arr[], int n, bool mostrar) {
     for (int i = 1; i < n; i++) {
         int clave = arr[i];
         int j = i - 1;
@@ -43,5 +53,11 @@ void Ordenamiento::insercion(int arr[], int n) {
         }
 
         arr[j + 1] = clave;
+
+        if (mostrar) {
+            for (int k = 0; k < n; k++)
+                cout << arr[k] << " ";
+            cout << endl;
+        }
     }
 }

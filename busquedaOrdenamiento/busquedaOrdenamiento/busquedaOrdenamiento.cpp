@@ -6,7 +6,7 @@ using namespace std::chrono;
 #include "search.h"
 #include "sort.h"
 #include "view.h"
-#include "numerosRandom.h"   // ← nuevo
+#include "numerosRandom.h"   
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
     int metodo;
 
     // Arreglo principal (capacidad máxima)
-    int arreglo[1000];
+    int arreglo[100000];
     int n = 0;
 
     int posicion;

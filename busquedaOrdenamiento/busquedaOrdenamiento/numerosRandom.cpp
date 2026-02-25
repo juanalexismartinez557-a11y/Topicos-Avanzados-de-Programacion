@@ -72,27 +72,22 @@ void generarNumeros(int arreglo[], int& n, bool repetir, int tipo)
     }
 
     // Validacion de capacidad maxima
-    if (total > 1000)
+    if (total > 100000)
     {
-        cout << "Error: excede el tamaño maximo permitido (1000).\n";
+        cout << "Error: excede el tamaño maximo permitido (10000).\n";
         n = 0;
         return;
     }
-
-	unordered_set<int> usados; // para evitar repetidos
-
+    unordered_set<int> usados;
     for (int i = 0; i < total; i++)
     {
-        int num = rand() % 1000;
-
+        int num = rand() % 100000;
         if (!repetir)
         {
             while (usados.count(num))
-                num = rand() % 1000;
-
+                num = rand() % 100000;
             usados.insert(num);
         }
-
         arreglo[i] = num;
     }
 

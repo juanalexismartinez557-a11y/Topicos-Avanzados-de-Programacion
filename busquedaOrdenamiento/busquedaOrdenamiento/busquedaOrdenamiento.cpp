@@ -1,19 +1,40 @@
 ﻿#include <iostream>
 #include <chrono>
+#include <ctime>
+#include <cstdlib>
+
 using namespace std;
 using namespace std::chrono;
 
-#include "search.h"
-#include "sort.h"
-#include "view.h"
-#include "numerosRandom.h"   
+// SEARCH
+#include "busquedaSecuencial.h"
+#include "busquedaBinaria.h"
+
+// SORT
+#include "ordenarBurbuja.h"
+#include "ordenarSeleccion.h"
+#include "ordenarInsercion.h"
+#include "quickSort.h"
+#include "mergeSort.h"
+
+// VIEW
+#include "mostrarMenu.h"
+#include "mostrarArreglo.h"
+#include "pedirValor.h"
+#include "mostrarMenuOrdenamiento.h"
+
+// RANDOM
+#include "menuGeneracion.h"
+#include "submenuComplejidad.h"
+#include "generarNumeros.h"
 
 int main()
 {
+    srand(time(0)); // ✔ Semilla inicial UNA sola vez
+
     int opcion;
     int metodo;
 
-    // Arreglo principal (capacidad máxima)
     int arreglo[100000];
     int n = 0;
 
@@ -24,13 +45,13 @@ int main()
 
     bool mostrarProceso;
 
-    // Configuración inicial
+    // CONFIGURACION INICIAL
     cout << "=== CONFIGURACION INICIAL ===\n";
 
-    int opGen = menuGeneracion();   // repetidos o no
+    int opGen = menuGeneracion();
     bool repetir = (opGen == 1);
 
-    int tipo = submenuComplejidad(); // n, n*n, n*m
+    int tipo = submenuComplejidad();
 
     generarNumeros(arreglo, n, repetir, tipo);
 
@@ -59,7 +80,6 @@ int main()
             mostrarArreglo(arreglo, n);
             valor = pedirValor();
 
-            cout << "Cronometro iniciado (Busqueda Secuencial)...\n";
             auto inicio = high_resolution_clock::now();
 
             posicion = busquedaSecuencial(arreglo, n, valor, mostrarProceso);
@@ -72,34 +92,27 @@ int main()
             else
                 cout << "Valor no encontrado.\n";
 
-            cout << "Tiempo de ejecucion: " << tiempo.count() << " ms\n";
+            cout << "Tiempo: " << tiempo.count() << " ms\n";
             break;
         }
 
         case 2: // Busqueda Binaria
         {
-            cout << "\nOrdenando arreglo con Burbuja...\n";
-
-            cout << "Cronometro iniciado (Ordenamiento Burbuja)...\n";
             auto inicioOrden = high_resolution_clock::now();
-
             ordenarBurbuja(arreglo, n, mostrarProceso);
-
             auto finOrden = high_resolution_clock::now();
-            duration<double, milli> tiempoOrden = finOrden - inicioOrden;
 
+            duration<double, milli> tiempoOrden = finOrden - inicioOrden;
             cout << "Tiempo Burbuja: " << tiempoOrden.count() << " ms\n";
 
             mostrarArreglo(arreglo, n);
 
             valor = pedirValor();
 
-            cout << "Cronometro iniciado (Busqueda Binaria)...\n";
             auto inicioBusq = high_resolution_clock::now();
-
             posicion = busquedaBinaria(arreglo, n, valor, mostrarProceso);
-
             auto finBusq = high_resolution_clock::now();
+
             duration<double, milli> tiempoBusq = finBusq - inicioBusq;
 
             if (posicion != -1)
@@ -114,25 +127,17 @@ int main()
         case 3: // Ordenar arreglo
         {
             metodo = mostrarMenuOrdenamiento();
-
             comparaciones = 0;
             intercambios = 0;
 
-            cout << "Cronometro iniciado (Ordenamiento)...\n";
             auto inicio = high_resolution_clock::now();
 
             if (metodo == 1)
-            {
                 ordenarBurbuja(arreglo, n, mostrarProceso);
-            }
             else if (metodo == 2)
-            {
                 ordenarSeleccion(arreglo, n, mostrarProceso);
-            }
             else if (metodo == 3)
-            {
                 ordenarInsercion(arreglo, n, mostrarProceso);
-            }
             else if (metodo == 4)
             {
                 quickSort(arreglo, 0, n - 1, comparaciones, intercambios, mostrarProceso);
@@ -145,16 +150,12 @@ int main()
                 cout << "Comparaciones: " << comparaciones << endl;
             }
             else
-            {
                 cout << "Metodo invalido.\n";
-            }
 
             auto fin = high_resolution_clock::now();
             duration<double, milli> tiempo = fin - inicio;
 
-            cout << "\nTiempo de ejecucion: " << tiempo.count() << " ms\n";
-
-            cout << "\nArreglo ordenado:\n";
+            cout << "\nTiempo: " << tiempo.count() << " ms\n";
             mostrarArreglo(arreglo, n);
             break;
         }

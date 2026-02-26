@@ -123,17 +123,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="numerosRandom.cpp" />
-    <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="busquedaBinaria.cpp" />
+    <ClCompile Include="busquedaSecuencial.cpp" />
+    <ClCompile Include="generarNumeros.cpp" />
+    <ClCompile Include="imprimirPaso.cpp" />
+    <ClCompile Include="menuGeneracion.cpp" />
+    <ClCompile Include="mergeSort.cpp" />
+    <ClCompile Include="mostrarArreglo.cpp" />
+    <ClCompile Include="mostrarMenu.cpp" />
+    <ClCompile Include="mostrarMenuOrdenamiento.cpp" />
+    <ClCompile Include="ordenarBurbuja.cpp" />
+    <ClCompile Include="ordenarInsercion.cpp" />
+    <ClCompile Include="ordenarSeleccion.cpp" />
+    <ClCompile Include="pedirValor.cpp" />
+    <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="busquedaOrdenamiento.cpp" />
-    <ClCompile Include="search.cpp" />
-    <ClCompile Include="view.cpp" />
+    <ClCompile Include="submenuComplejidad.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="numerosRandom.h" />
-    <ClInclude Include="search.h" />
-    <ClInclude Include="sort.h" />
-    <ClInclude Include="view.h" />
+    <ClInclude Include="busquedaBinaria.h" />
+    <ClInclude Include="busquedaSecuencial.h" />
+    <ClInclude Include="generarNumeros.h" />
+    <ClInclude Include="imprimirPaso.h" />
+    <ClInclude Include="menuGeneracion.h" />
+    <ClInclude Include="mergeSort.h" />
+    <ClInclude Include="mostrarArreglo.h" />
+    <ClInclude Include="mostrarMenu.h" />
+    <ClInclude Include="mostrarMenuOrdenamiento.h" />
+    <ClInclude Include="ordenarBurbuja.h" />
+    <ClInclude Include="ordenarInsercion.h" />
+    <ClInclude Include="ordenarSeleccion.h" />
+    <ClInclude Include="pedirValor.h" />
+    <ClInclude Include="quickSort.h" />
+    <ClInclude Include="submenuComplejidad.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

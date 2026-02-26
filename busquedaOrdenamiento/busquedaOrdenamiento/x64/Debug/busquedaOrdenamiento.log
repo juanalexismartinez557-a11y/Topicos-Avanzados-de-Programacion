@@ -1,3 +1,8 @@
-﻿  numerosRandom.cpp
-C:\Users\juana\Documents\GitHub\Programacion-Avanzada\busquedaOrdenamiento\busquedaOrdenamiento\numerosRandom.cpp(41,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  generarNumeros.cpp
+  menuGeneracion.cpp
+C:\Users\juana\Documents\GitHub\Programacion-Avanzada\busquedaOrdenamiento\busquedaOrdenamiento\generarNumeros.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  busquedaOrdenamiento.cpp
+C:\Users\juana\Documents\GitHub\Programacion-Avanzada\busquedaOrdenamiento\busquedaOrdenamiento\busquedaOrdenamiento.cpp(33,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  submenuComplejidad.cpp
+  Generating Code...
   busquedaOrdenamiento.vcxproj -> C:\Users\juana\Documents\GitHub\Programacion-Avanzada\busquedaOrdenamiento\x64\Debug\busquedaOrdenamiento.exe

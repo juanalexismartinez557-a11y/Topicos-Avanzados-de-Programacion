@@ -18,30 +18,96 @@
     <ClCompile Include="busquedaOrdenamiento.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="search.cpp">
+    <ClCompile Include="busquedaSecuencial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="view.cpp">
+    <ClCompile Include="busquedaBinaria.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
+    <ClCompile Include="imprimirPaso.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="numerosRandom.cpp">
+    <ClCompile Include="ordenarBurbuja.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ordenarSeleccion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ordenarInsercion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quickSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mergeSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mostrarMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mostrarArreglo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pedirValor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mostrarMenuOrdenamiento.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menuGeneracion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="submenuComplejidad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generarNumeros.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="search.h">
+    <ClInclude Include="busquedaSecuencial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="view.h">
+    <ClInclude Include="busquedaBinaria.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sort.h">
+    <ClInclude Include="imprimirPaso.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="numerosRandom.h">
+    <ClInclude Include="ordenarBurbuja.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ordenarSeleccion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ordenarInsercion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quickSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mostrarMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mostrarArreglo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pedirValor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mostrarMenuOrdenamiento.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menuGeneracion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="submenuComplejidad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generarNumeros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

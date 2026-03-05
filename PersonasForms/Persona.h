@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-struct Persona {
+struct Persona { // Estructura para almacenar los datos de una persona
     std::string nombres;
     std::string apellidoPaterno;
     std::string apellidoMaterno;

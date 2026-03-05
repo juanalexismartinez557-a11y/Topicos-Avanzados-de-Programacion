@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool archivoTieneDatos() {
+bool archivoTieneDatos() { // Función para verificar si el archivo ya contiene datos
 
     ifstream verificar("personas.txt");
 
@@ -17,7 +17,7 @@ bool archivoTieneDatos() {
     return tieneDatos;
 }
 
-void guardarPersona(Persona p, bool sobrescribir) {
+void guardarPersona(Persona p, bool sobrescribir) { // Función para guardar los datos de una persona en el archivo, con opción de sobrescribir
 
     ofstream archivo;
 
@@ -39,7 +39,7 @@ void guardarPersona(Persona p, bool sobrescribir) {
     }
 }
 
-vector<string> leerPersonas() {
+vector<string> leerPersonas() { // Función para leer los datos de las personas almacenadas en el archivo y devolverlos como un vector de strings
 
     vector<string> datos;
 

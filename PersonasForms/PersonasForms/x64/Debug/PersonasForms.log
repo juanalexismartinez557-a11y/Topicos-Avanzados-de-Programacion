@@ -1,3 +1,5 @@
-﻿  main.cpp
+﻿  ArchivoPersonas.cpp
+  main.cpp
+  Generating Code...
   ArchivoPersonas.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   PersonasForms.vcxproj -> C:\Users\juana\Documents\GitHub\Programacion-Avanzada\PersonasForms\x64\Debug\PersonasForms.exe
